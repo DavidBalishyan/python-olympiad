@@ -85,5 +85,4 @@
 ---
 
 ## Notes
-- keep this README as a concise reference; use the corresponding `opt_*.py` scripts for code details.
-- all major algorithms are explained in plain phrasing with code snippets where helpful.
+- I am keeping this README as a concise reference; use the corresponding `opt_*.py` scripts for code details.
