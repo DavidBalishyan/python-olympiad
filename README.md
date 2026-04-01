@@ -40,7 +40,7 @@
 - `calculate_average()`: read numbers, `sum(values)/len(values)`.
 
 ### Task 4
-- `Circle`: `surface` = `math.pi * r**2`, `length` = `2 * math.pi * r`.
+- `Circle`: `surface` = `math.pi * r**2`, `circumferance` = `math.tau * r`.
 - `Square`: `surface` = `side**2`, `perimeter` = `4 * side`.
 
 ---

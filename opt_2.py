@@ -117,7 +117,7 @@ class Circle:
  
     def length(self):
         """Calculates and returns the circumference of the circle."""
-        return 2 * math.pi * self.radius
+        return math.tau * self.radius
  
     def __str__(self):
         return (f"Circle(radius={self.radius}) | "
