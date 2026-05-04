@@ -1,7 +1,4 @@
-# ================================================
 # Task 1: Lists and Loops
-# ================================================
-
 print("=" * 50)
 print("Task 1: Lists and Loops")
 print("=" * 50)
@@ -25,10 +22,7 @@ print("Odd numbers: ", odd_numbers)
 print("Even numbers:", even_numbers)
 
 
-# ================================================
 # Task 2: Recursive Functions
-# ================================================
-
 print("\n" + "=" * 50)
 print("Task 2: Recursive Functions")
 print("=" * 50)
@@ -56,10 +50,7 @@ for lst in [[1, 2, 3], [10, 20, 30, 40], []]:
     print(f"  list_sum({lst}) = {list_sum(lst)}")
 
 
-# ================================================
 # Task 3: File Processing and Data Analysis
-# ================================================
-
 print("\n" + "=" * 50)
 print("Task 3: File Processing")
 print("=" * 50)
@@ -91,11 +82,9 @@ write_user()
 print_age()
 
 
-# ================================================
 # Task 4: OOP - EqTriangle and RightTriangle
-# ================================================
-# https://tinyurl.com/2p9runb7
 
+# https://tinyurl.com/2p9runb7
 print("\n" + "=" * 50)
 print("Task 4: OOP - EqTriangle and RightTriangle")
 print("=" * 50)

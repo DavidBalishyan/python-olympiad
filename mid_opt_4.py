@@ -1,7 +1,4 @@
-# ================================================
 # Task 1: Dictionaries and Sets
-# ================================================
-
 print("=" * 50)
 print("Task 1: Dictionaries and Sets")
 print("=" * 50)
@@ -23,10 +20,7 @@ youngest_age = min(students.values())
 print("Youngest age:", youngest_age)
 
 
-# ================================================
 # Task 2: Recursive Functions
-# ================================================
-
 print("\n" + "=" * 50)
 print("Task 2: Recursive Functions")
 print("=" * 50)
@@ -43,19 +37,16 @@ def list_product(lst):
         return 1             # neutral element for multiplication
     return lst[0] * list_product(lst[1:])
 
-# Tests — reverse string
+# Tests - reverse string
 for s in ["Hello world", "Python", "a"]:
     print(f"  reverse_string('{s}') = '{reverse_string(s)}'")
 
-# Tests — list product
+# Tests - list product
 for lst in [[1, 2, 3, 4], [5, 6], [7]]:
     print(f"  list_product({lst}) = {list_product(lst)}")
 
 
-# ================================================
 # Task 3: File Processing and Data Analysis
-# ================================================
-
 print("\n" + "=" * 50)
 print("Task 3: File Processing")
 print("=" * 50)
@@ -106,12 +97,10 @@ write_text()
 find_most_frequent()
 
 
-# ================================================
-# Task 4: OOP — Hexagon and Square
-# ================================================
+# Task 4: OOP - Hexagon and Square
 
 print("\n" + "=" * 50)
-print("Task 4: OOP — Hexagon and Square")
+print("Task 4: OOP - Hexagon and Square")
 print("=" * 50)
 
 import math

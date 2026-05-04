@@ -1,7 +1,4 @@
-# ================================================
 # Task 1: Lists and Strings
-# ================================================
- 
 print("=" * 50)
 print("Task 1: Lists and Strings")
 print("=" * 50)
@@ -21,10 +18,7 @@ print("Original list:", words)
 print("Words longer than 4:", long_words)
  
  
-# ================================================
 # Task 2: Recursive Functions
-# ================================================
- 
 print("\n" + "=" * 50)
 print("Task 2: Recursive Functions")
 print("=" * 50)
@@ -57,10 +51,7 @@ for word in ["racecar", "hello", "madam", "python", "level"]:
     print(f"  is_palindrome('{word}') = {is_palindrome(word)}")
  
  
-# ================================================
 # Task 3: File Processing and Data Analysis
-# ================================================
- 
 print("\n" + "=" * 50)
 print("Task 3: File Processing")
 print("=" * 50)
@@ -153,3 +144,4 @@ sq = Square(4)
 print(sq)
 print(f"  Area:      {sq.surface()}")
 print(f"  Perimeter: {sq.perimeter()}")
+ 

@@ -2,7 +2,7 @@
 SHELL := /bin/bash
 PYTHON := python3
 
-.PHONY: help solve-1 solve-2 solve-3 solve-4 run-all clean
+.PHONY: help solve-1 solve-2 solve-3 solve-4 solve-mid-1 solve-mid-2 solve-mid-3 solve-mid-4 solve-senior-1 solve-senior-2 solve-senior-3 solve-senior-4 solve-junior-1 solve-junior-2 solve-junior-3 solve-junior-4 run-all clean
 
 
 # Color output
@@ -37,7 +37,43 @@ solve-3: ## Run solution 3
 solve-4: ## Run solution 4
 	@$(PYTHON) opt_4.py
 
-run-all: solve-1 solve-2 solve-3 solve-4 ## Run all solutions
+solve-mid-1: ## Run mid solution 1
+	@$(PYTHON) mid_opt_1.py
+
+solve-mid-2: ## Run mid solution 2
+	@$(PYTHON) mid_opt_2.py
+
+solve-mid-3: ## Run mid solution 3
+	@$(PYTHON) mid_opt_3.py
+
+solve-mid-4: ## Run mid solution 4
+	@$(PYTHON) mid_opt_4.py
+
+solve-senior-1: ## Run senior solution 1
+	@$(PYTHON) senior_opt_1.py
+
+solve-senior-2: ## Run senior solution 2
+	@$(PYTHON) senior_opt_2.py
+
+solve-senior-3: ## Run senior solution 3
+	@$(PYTHON) senior_opt_3.py
+
+solve-senior-4: ## Run senior solution 4
+	@$(PYTHON) senior_opt_4.py
+
+solve-junior-1: ## Run junior solution 1
+	@$(PYTHON) junior_opt_1.py
+
+solve-junior-2: ## Run junior solution 2
+	@$(PYTHON) junior_opt_2.py
+
+solve-junior-3: ## Run junior solution 3
+	@$(PYTHON) junior_opt_3.py
+
+solve-junior-4: ## Run junior solution 4
+	@$(PYTHON) junior_opt_4.py
+
+run-all: solve-1 solve-2 solve-3 solve-4 solve-mid-1 solve-mid-2 solve-mid-3 solve-mid-4 solve-senior-1 solve-senior-2 solve-senior-3 solve-senior-4 solve-junior-1 solve-junior-2 solve-junior-3 solve-junior-4 ## Run all solutions
 
 ##@ Utilities
 
@@ -46,5 +82,5 @@ clean: ## Clean up Python cache and temporary files
 	@find . -type f -name "*.pyc" -delete 2>/dev/null || true
 	@find . -type f -name "*.pyo" -delete 2>/dev/null || true
 	@find . -type d -name "*.egg-info" -exec rm -rf {} + 2>/dev/null || true
-	@echo "$(GREEN) Clean complete$(RESET)"
+	@printf "$(GREEN) Clean complete$(RESET)\n"
 

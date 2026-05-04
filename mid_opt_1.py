@@ -1,60 +1,40 @@
-# ================================================
-# Task 1: List Operations
-# ================================================
- 
 print("=" * 50)
 print("Task 1: List Operations")
 print("=" * 50)
- 
-# a) Get 5 numbers from user and store in a list
+
 numbers = []
 print("Enter 5 numbers:")
 for i in range(5):
     num = int(input())
     numbers.append(num)
- 
-# b) Create a new list containing only unique elements
+
 unique = [x for x in numbers if numbers.count(x) == 1]
- 
-# c) Print both lists
+
 print("Original list:", numbers)
 print("Unique elements:", sorted(unique))
- 
- 
-# ================================================
-# Task 2: Recursive Functions
-# ================================================
- 
+
 print("\n" + "=" * 50)
 print("Task 2: Recursive Functions")
 print("=" * 50)
- 
-# a) Recursive GCD using Euclidean algorithm
-# GCD(a, b) = m(a) + n(b)
+
 def gcd(a, b):
     if b == 0:
         return a
     return gcd(b, a % b)
- 
-# b) Recursive sum of digits
+
 def digit_sum(n):
     n = abs(n)
     if n < 10:
         return n
     return n % 10 + digit_sum(n // 10)
-# the floor division // rounds the result down to the nearest whole number
 
-# Tests
-print(f"GCD(48, 18)   = {gcd(48, 18)}")         # 6
-print(f"GCD(100, 75)  = {gcd(100, 75)}")         # 25
-print(f"Digit sum of 1234 = {digit_sum(1234)}")  # 10
+print(f"GCD(48, 18)   = {gcd(48, 18)}")
+print(f"GCD(100, 75)  = {gcd(100, 75)}")
+print(f"Digit sum of 1234 = {digit_sum(1234)}")
 print(f"Digit sum of 9999 = {digit_sum(9999)}")  # 36
  
  
-# ================================================
 # Task 3: File Processing and Data Analysis
-# ================================================
- 
 print("\n" + "=" * 50)
 print("Task 3: File Processing")
 print("=" * 50)
@@ -90,9 +70,7 @@ write_to_file()
 find_longest_word()
  
  
-# ================================================
-# Task 4: (OOP)
-# ================================================
+# Task 4: OOP - Rectangle and Square
  
 print("\n" + "=" * 50)
 print("Task 4: OOP - Rectangle and Square")
