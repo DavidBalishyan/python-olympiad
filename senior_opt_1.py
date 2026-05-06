@@ -12,7 +12,9 @@ def task1():
 def task2(matrix):
     for i, row in enumerate(matrix, 1):
         row_sum = sum(row)
-        print(f"Առաջին տողի տարրերի գումարը {row_sum} է։" if i == 1 else f"Երկրորդ տողի տարրերի գումարը {row_sum} է։" if i == 2 else f"Երրորդ տողի տարրերի գումարը {row_sum} է։")
+        print(f"Առաջին տողի տարրերի գումարը {row_sum} է։"
+              if i == 1 else f"Երկրորդ տողի տարրերի գումարը {row_sum} է։"
+              if i == 2 else f"Երրորդ տողի տարրերի գումարը {row_sum} է։")
 
     total_sum = sum(sum(row) for row in matrix)
     average = total_sum / 9  # Since it's 3x3
